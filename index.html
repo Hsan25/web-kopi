@@ -30,21 +30,49 @@
         <a href="#about">Tentang kami</a>
         <a href="#menu">Menu</a>
         <a href="#contact">Kontak</a>
+
+        <!-- login -->
+        <div class="box-login">
+          <a href="/form-login/login.html">Login</a>
+          <a href="/form-login/signUp.html">SignUp</a>
+        </div>
       </div>
 
       <div class="nav-icon">
         <a href="" class="search"><i data-feather="search"></i></a>
-        <a href="" ><i data-feather="shopping-cart"></i></a>
+        <a href="" class="btn-product"><i data-feather="shopping-cart"></i></a>
         <a href="" class="menu"><i data-feather="menu"></i></a>
       </div>
 
-
-        <!--box search  -->
+      <!--box search  -->
       <div class="search-box">
-        <input type="search" placeholder="search...">
+        <input type="search" placeholder="search..." />
         <i data-feather="search" class="icon-search"></i>
       </div>
 
+      <!-- keranjang list -->
+      <div class="shopping">
+        <div class="list-shopping">
+          <div class="image">
+            <img src="img/1.jpg" alt="" />
+          </div>
+          <div class="description">
+            <h3>Cappucino</h3>
+            <h3>55k</h3>
+          </div>
+          <a href=""><i data-feather="trash-2"></i></a>
+        </div>
+        <div class="list-shopping">
+          <div class="image">
+            <img src="img/1.jpg" alt="" />
+          </div>
+          <div class="description">
+            <h3>Cappucino</h3>
+            <h3>55k</h3>
+          </div>
+          <a href=""><i data-feather="trash-2"></i></a>
+        </div>
+      </div>
     </nav>
 
     <!-- nav end -->
@@ -52,7 +80,10 @@
     <!-- hero start-->
     <section id="home" class="hero">
       <main class="content">
-        <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
+        <h1>
+          Hello, <span class="name-user">Haasan</span><br />
+          Mari Nikmati Secangkir <span>Kopi</span>
+        </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
           et! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ad
@@ -136,9 +167,48 @@
           <h3>Cappucino</h3>
           <h3>15K</h3>
         </div>
+        <div class="card-menu">
+          <img src="img/2.jpg" alt="card-menu" />
+          <h3>Cappucino</h3>
+          <h3>15K</h3>
+        </div>
       </div>
     </section>
     <!-- menu end -->
+
+    <!-- products start -->
+    <section class="product" id="product">
+      <h2><span>Product Unggulan</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae,
+        suscipit consectetur? Doloribus assumenda dicta numquam.
+      </p>
+
+      <div class="list-product">
+        <div class="product-item">
+          <div class="product-icon">
+            <a href=""><i data-feather="shopping-cart"></i></a>
+            <a href="" class="showDetail"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-img">
+            <img src="img/1.jpg" alt="" />
+          </div>
+          <div class="product-description">
+            <h3>Cappucino</h3>
+            <div class="stars">
+              <a href=""><i data-feather="star" class="star"></i></a>
+              <a href=""><i data-feather="star" class="star"></i></a>
+              <a href=""><i data-feather="star" class="star"></i></a>
+              <a href=""><i data-feather="star" class="star"></i></a>
+              <a href=""><i data-feather="star" class="star"></i></a>
+            </div>
+            <h3>55k</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products end -->
+
     <!-- contact start-->
 
     <section class="contact" id="contact">
@@ -151,35 +221,32 @@
       </p>
 
       <div class="row">
-        <!-- <iframe
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2038.3497984156977!2d107.59037786199252!3d-6.9330954768477016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9f4030587af%3A0x9e5c251466df2078!2sMI%20Bahrul%20Ihsan!5e0!3m2!1sid!2sid!4v1684069457783!5m2!1sid!2sid"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-         class="map"></iframe> -->
+         class="map"></iframe>
 
-         <form action="">
-           <div class="input-group">
-             <i data-feather="user"></i>
-             <input type="text" placeholder="nama">
-           </div>
-           <div class="input-group">
-             <i data-feather="mail"></i>
-             <input type="text" placeholder="email">
-           </div>
-           <div class="input-group">
-             <i data-feather="phone"></i>
-             <input type="text" placeholder="no telpon">
-           </div>
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no telpon" />
+          </div>
 
-           <button type="submit" class="btn">Kirim pesan</button>
+          <button type="submit" class="btn">Kirim pesan</button>
+        </form>
       </div>
-
-
-      </form>
     </section>
     <!-- contact end -->
-
 
     <!-- footer start-->
     <footer>
@@ -201,6 +268,35 @@
       </div>
     </footer>
     <!-- footer end -->
+
+    <!-- modal box detail start -->
+
+    <section class="modal">
+      <div class="container">
+        <a href="" class="close-modal"><i data-feather="x"></i></a>
+        <img src="img/1.jpg" alt="" />
+        <div class="description">
+          <h3>Cappucino</h3>
+          <div class="stars">
+            <a href=""><i data-feather="star" class="star"></i></a>
+            <a href=""><i data-feather="star" class="star"></i></a>
+            <a href=""><i data-feather="star" class="star"></i></a>
+            <a href=""><i data-feather="star" class="star"></i></a>
+            <a href=""><i data-feather="star" class="star"></i></a>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, velit
+            dolorum deleniti nesciunt aperiam atque!
+          </p>
+          <button class="btn-modal-add">
+            <i data-feather="shopping-cart"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal box detail end -->
+
     <!-- icons -->
     <script>
       feather.replace();
