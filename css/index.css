@@ -90,6 +90,46 @@ nav .nav-icon .menu{
 }
 
 
+nav .search-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 100%;
+  right: 100%;
+  padding: 1rem;
+  background-color: #fff;
+ 
+}
+
+nav .search-box input {
+  width: 100%;
+  height: 100%;
+  padding:1rem 2rem ;
+  font-size:1rem;
+  margin-right: 1rem;
+}
+
+nav .search-box .icon-search {
+  color:black;
+  height: 3rem;
+  cursor: pointer;
+}
+
+nav .search-box.active{
+  right: 10rem;
+  animation: zoom .3s linear;
+
+}
+
+
+@keyframes zoom {
+  0%{
+    transform: scaleX(0);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
 /* nav end */
 
 
@@ -212,6 +252,7 @@ nav .nav-icon .menu{
 .menu .menu-list {
    width: 80%;
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center; 
    margin: 3rem auto;
@@ -220,7 +261,7 @@ nav .nav-icon .menu{
 
 
 .menu .card-menu img{
-  width: 15rem;
+  width: 10rem;
   border-radius: 50%;
 }
 
@@ -229,6 +270,7 @@ nav .nav-icon .menu{
   text-align: center;
  
 }
+
 
 /* menu end */
 
@@ -248,7 +290,7 @@ nav .nav-icon .menu{
 
 .contact .row form {
   text-align: center;
-  flex: 1 1 45rem;
+  flex: 1 1 40rem;
   padding: 5rem 2rem;
 }
 
@@ -349,6 +391,10 @@ footer .social , .links{
   nav .navbar a:hover::after{
     transform: scaleX(.2);
   }
+
+  nav .search-box.active{
+    right: 5rem;
+  }
   /* nav end */
 
   /* about */
@@ -368,34 +414,25 @@ footer .social , .links{
     object-position: center;
   }
 
-}
-/* menu */
-
-.menu .card-menu img{
-  width: 10rem;
-  border-radius: 50%;
-}
-
-.menu-list{
-  flex-wrap: wrap;
-}
-
-/* contact */
-
-.contact .row {
-  margin: 1rem auto;
-  flex-wrap: wrap;
-
+  /* contact */
+  
+  .contact .row {
+    margin: 1rem auto;
+    flex-wrap: wrap;
+  
+  }
+  
+  .contact .row .map{
+    height: 26rem;
+  
+  } 
+  
+  .contact .row form {
+    padding-top: 0;
+  }
 }
 
-.contact .row .map{
-  height: 26rem;
 
-} 
-
-.contact .row form {
-  padding-top: 0;
-}
 
 
 
